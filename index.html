@@ -1,0 +1,592 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Holion">
+
+	<title>Holion</title>
+
+	<!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="less/freelancer.css" rel="stylesheet">
+
+	<!-- Custom Fonts -->
+	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#page-top">Holion</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden">
+						<a href="#page-top"></a>
+					</li>
+					<li class="page-scroll">
+						<a href="#description">Kort fortalt</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#portfolio">Referencer</a>
+					</li>
+					<!--<li class="page-scroll">
+						<a href="#contact">Kontakt</a>
+					</li>-->
+					<li class="page-scroll">
+						<a href="#about">Om</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<!-- Header -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<!--<img class="img-responsive" src="img/profile.png" alt="">-->
+					<div class="intro-text">
+						<!--<span class="name">Holion<br />v/Niels Ladegaard Beck</span>
+						<hr class="star-light">-->
+						<span class="skills">.NET udvikling &middot; webudvikling &middot; konsulentbistand</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- About Section -->
+	<section id="description">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Kort fortalt</h2>
+					<hr class="star-primary">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-2">
+					<p>Holion er et konsulentfirma med speciale indenfor .NET udvikling.</p>
+					<p>Vi leverer apps, webløsninger programmer af høj kvalitet. Vi arbejder med både store og små kunder og fokuserer på altid at levere et resultat af højeste kvalitet.</p>
+				</div>
+				<div class="col-lg-4">
+					<p>Vores stil er venlig og afslappet, og vi tager meget gerne et uforpligtende møde. Vi ser frem til også at løse opgaver for jer.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Portfolio Grid Section -->
+	<section class="success" id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Referencer</h2>
+					<hr class="star-light">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 portfolio-item">
+					<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<i class="fa fa-search-plus fa-3x"></i>
+							</div>
+						</div>
+						<img src="img/portfolio/sekoia.png" class="img-responsive" alt="">
+					</a>
+				</div>
+				<div class="col-sm-4 portfolio-item">
+					<a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<i class="fa fa-search-plus fa-3x"></i>
+							</div>
+						</div>
+						<img src="img/portfolio/ex-trade.png" class="img-responsive" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<!--<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Kontakt</h2>
+					<hr class="star-primary">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<form name="sentMessage" id="contactForm" novalidate>
+						<div class="row control-group">
+							<div class="form-group col-xs-12 floating-label-form-group controls">
+								<label>Navn</label>
+								<input type="text" class="form-control" placeholder="Navn" id="name" required data-validation-required-message="Indtast venligst dit navn">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="row control-group">
+							<div class="form-group col-xs-12 floating-label-form-group controls">
+								<label>E-mail adresse</label>
+								<input type="email" class="form-control" placeholder="E-mail adresse" id="email">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="row control-group">
+							<div class="form-group col-xs-12 floating-label-form-group controls">
+								<label>Telefon</label>
+								<input type="tel" class="form-control" placeholder="Telefon" id="phone">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="row control-group">
+							<div class="form-group col-xs-12 floating-label-form-group controls">
+								<label>Besked</label>
+								<textarea rows="5" class="form-control" placeholder="Besked" id="message" required data-validation-required-message="Indtast venligst en besked."></textarea>
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<br>
+						<div id="success"></div>
+						<div class="row">
+							<div class="form-group col-xs-12">
+								<button type="submit" class="btn btn-success btn-lg">Send</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>-->
+
+	<!-- About Section -->
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Om</h2>
+					<hr class="star-light">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-2">
+					<h3>Adresse</h3>
+					<p>
+						<a href="https://www.google.dk/maps/place/Holion+v%2FNiels+Ladegaard+Beck/@56.316073,9.9796,574m/data=!3m2!1e3!4b1!4m2!3m1!1s0x464c1022b204c003:0x49b122b618bff2aa?hl=da" target="_blank">
+							<img src="img/map.png" style="border: 1px solid black" />
+						</a>
+					</p>
+					<p>Lyngåvej 74</p>
+					<p>8370 Hadsten</p>
+				</div>
+				<div class="col-lg-4">
+					<h3>CVR</h3>
+					<p>30 84 96 98</p>
+
+					<h3>Kontakt</h3>
+					<div style="display: table">
+						<div style="display: table-row">
+							<p style="display: table-cell; padding-right: 10px">
+								Mobil:
+							</p>
+							<p style="display: table-cell">
+								61 30 30 39
+							</p>
+						</div>
+						<div style="display: table-row">
+							<p style="display: table-cell">
+								Mail:
+							</p>
+							<p style="display: table-cell">
+								info@holion.dk
+							</p>
+						</div>
+					</div>
+
+				    <h3>Bankoplysninger</h3>
+					<div style="display: table">
+						<div style="display: table-row">
+							<p style="display: table-cell">
+								Bank:
+							</p>
+							<p style="display: table-cell">
+								Spar Nord
+							</p>
+						</div>
+						<div style="display: table-row">
+							<p style="display: table-cell">
+								Regnr:
+							</p>
+							<p style="display: table-cell">
+								7470
+							</p>
+						</div>
+						<div style="display: table-row">
+							<p style="display: table-cell; padding-right: 10px">
+								Kontonr:
+							</p>
+							<p style="display: table-cell">
+								4571641521
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="text-center">
+<!--		<div class="footer-above">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col col-md-4">
+						<h3>Adresse</h3>
+						<p>Lyngåvej 74<br />8470 Hadsten</p>
+					</div>
+					<div class="footer-col col-md-4">
+						<h3>CVR</h3>
+						<p>30 84 96 98</p>
+					</div>
+					<div class="footer-col col-md-4">
+						<h3>Bankoplysninger</h3>
+						<p>Regnr:	7470</p>
+						<p>Kontonr:	4571641521</p>
+					</div>
+				</div>
+			</div>
+		</div>-->
+		<div class="footer-below">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						Holion v/Niels Ladegaard Beck, Lyngåvej 74, 8370 Hadsten &middot; Mail: info@holion.dk &middot; Mobil: 61 30 30 39
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<div class="scroll-top page-scroll visible-xs visble-sm">
+		<a class="btn btn-primary" href="#page-top">
+			<i class="fa fa-chevron-up"></i>
+		</a>
+	</div>
+
+	<!-- Portfolio Modals -->
+	<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<img src="img/portfolio/sekoia.png" class="img-responsive img-centered" alt="">
+							<p>Holion har i samarbejde med Sekoia udviklet en videochat, der gennem browseren eller Sekoias Windows applikation kan forbinde patienter med pårørende og sundhedsfagligt personale.</p>
+							<ul class="list-inline item-details">
+								<li>
+									Klient:
+									<strong>
+										<a href="http://sekoia.dk">Sekoia</a>
+									</strong>
+								</li>
+								<li>
+									Opstart:
+									<strong>
+										April 2014
+									</strong>
+								</li>
+								<li>
+									Tags:
+									<strong>
+										Webudvikling, HTML, CSS, TypeScript, JavaScript, WebRTC, Signal-R, Durandal
+									</strong>
+								</li>
+							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Luk</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>Project Title</h2>
+							<hr class="star-primary">
+							<img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+							<p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+							<ul class="list-inline item-details">
+								<li>
+									Client:
+									<strong>
+										<a href="http://startbootstrap.com">Start Bootstrap</a>
+									</strong>
+								</li>
+								<li>
+									Date:
+									<strong>
+										<a href="http://startbootstrap.com">April 2014</a>
+									</strong>
+								</li>
+								<li>
+									Service:
+									<strong>
+										<a href="http://startbootstrap.com">Web Development</a>
+									</strong>
+								</li>
+							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>Project Title</h2>
+							<hr class="star-primary">
+							<img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+							<p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+							<ul class="list-inline item-details">
+								<li>
+									Client:
+									<strong>
+										<a href="http://startbootstrap.com">Start Bootstrap</a>
+									</strong>
+								</li>
+								<li>
+									Date:
+									<strong>
+										<a href="http://startbootstrap.com">April 2014</a>
+									</strong>
+								</li>
+								<li>
+									Service:
+									<strong>
+										<a href="http://startbootstrap.com">Web Development</a>
+									</strong>
+								</li>
+							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>Project Title</h2>
+							<hr class="star-primary">
+							<img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
+							<p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+							<ul class="list-inline item-details">
+								<li>
+									Client:
+									<strong>
+										<a href="http://startbootstrap.com">Start Bootstrap</a>
+									</strong>
+								</li>
+								<li>
+									Date:
+									<strong>
+										<a href="http://startbootstrap.com">April 2014</a>
+									</strong>
+								</li>
+								<li>
+									Service:
+									<strong>
+										<a href="http://startbootstrap.com">Web Development</a>
+									</strong>
+								</li>
+							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>Project Title</h2>
+							<hr class="star-primary">
+							<img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+							<p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+							<ul class="list-inline item-details">
+								<li>
+									Client:
+									<strong>
+										<a href="http://startbootstrap.com">Start Bootstrap</a>
+									</strong>
+								</li>
+								<li>
+									Date:
+									<strong>
+										<a href="http://startbootstrap.com">April 2014</a>
+									</strong>
+								</li>
+								<li>
+									Service:
+									<strong>
+										<a href="http://startbootstrap.com">Web Development</a>
+									</strong>
+								</li>
+							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>Project Title</h2>
+							<hr class="star-primary">
+							<img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+							<p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+							<ul class="list-inline item-details">
+								<li>
+									Client:
+									<strong>
+										<a href="http://startbootstrap.com">Start Bootstrap</a>
+									</strong>
+								</li>
+								<li>
+									Date:
+									<strong>
+										<a href="http://startbootstrap.com">April 2014</a>
+									</strong>
+								</li>
+								<li>
+									Service:
+									<strong>
+										<a href="http://startbootstrap.com">Web Development</a>
+									</strong>
+								</li>
+							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery Version 1.11.0 -->
+	<script src="js/jquery-1.11.0.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/cbpAnimatedHeader.js"></script>
+
+	<!-- Contact Form JavaScript -->
+	<script src="js/jqBootstrapValidation.js"></script>
+	<script src="js/contact_me.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="js/freelancer.js"></script>
+
+</body>
+
+</html>
