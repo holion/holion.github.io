@@ -1,4 +1,4 @@
-body {
+﻿body {
   overflow-x: hidden;
 }
 p {
@@ -62,6 +62,12 @@ hr.star-primary:after {
 .img-centered {
   margin: 0 auto;
 }
+.carousel-control.left {
+  background-image: linear-gradient(to right, #819f97 0, rgba(0, 0, 0, 0.0001) 100%);
+}
+.carousel-control.right {
+  background-image: linear-gradient(to left, #819f97 0, rgba(0, 0, 0, 0.0001) 100%);
+}
 header {
   text-align: center;
   background: #819f97;
@@ -78,9 +84,25 @@ header img {
 header .intro-text .name {
   display: block;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
+}
+header .intro-text .carousel img {
+  margin: 0;
+}
+header .intro-text .carousel .skills {
+  color: #272f24;
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid #819f97;
+  padding: 10px;
+  border-radius: 15px;
+  text-shadow: 0 0 0.4em #819f97;
+}
+header .intro-text .carousel .carousel-indicators li {
+  border-color: #272f24;
+}
+header .intro-text .carousel .carousel-indicators .active {
+  background-color: #819f97;
 }
 header .intro-text .skills {
   font-size: 1.25em;
@@ -404,3 +426,4 @@ footer .footer-below {
   /* Safari and Chrome */
   z-index: 1052;
 }
+/*# sourceMappingURL=freelancer.css.map */
