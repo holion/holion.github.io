@@ -59,6 +59,9 @@ hr.star-primary:after {
   background-color: white;
   color: #272f24;
 }
+#description p {
+  text-align: justify;
+}
 .img-centered {
   margin: 0 auto;
 }
