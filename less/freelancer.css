@@ -87,16 +87,31 @@ header .intro-text .name {
   font-weight: 700;
   font-size: 2em;
 }
+header .intro-text .carousel-caption:first-child {
+  position: static;
+  padding-bottom: 0;
+}
+header .intro-text .carousel-caption:last-child {
+  position: static;
+  padding-top: 0;
+}
 header .intro-text .carousel img {
   margin: 0;
 }
-header .intro-text .carousel .skills {
+header .intro-text .carousel-caption {
   color: #272f24;
-  background-color: rgba(255, 255, 255, 0.75);
-  border: 1px solid #819f97;
-  padding: 10px;
-  border-radius: 15px;
+  background: white;
+  padding: 12px;
+  padding-bottom: 0;
   text-shadow: 0 0 0.4em #819f97;
+}
+header .intro-text .carousel-caption:first-child {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+header .intro-text .carousel-caption:last-child {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 header .intro-text .carousel .carousel-indicators li {
   border-color: #272f24;
@@ -120,6 +135,12 @@ header .intro-text .skills {
     font-size: 1.75em;
   }
 }
+.nav > li > a {
+  padding: 10px 25px;
+}
+.navbar-brand {
+  height: auto;
+}
 @media (min-width: 768px) {
   .navbar-fixed-top {
     padding: 25px 0;
@@ -132,6 +153,10 @@ header .intro-text .skills {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+  }
+  .navbar-nav > li > a {
+    padding-bottom: 29.5px;
+    padding-top: 29.5px;
   }
   .navbar-fixed-top.navbar-shrink {
     padding: 10px 0;

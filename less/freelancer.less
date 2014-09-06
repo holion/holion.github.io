@@ -103,17 +103,36 @@ header {
 			font-size: 2em;
 		}
 
+		.carousel-caption:first-child {
+			position: static;
+			padding-bottom: 0;
+		}
+
+		.carousel-caption:last-child {
+			position: static;
+			padding-top: 0;
+		}
+
 		.carousel img {
 			margin: 0;
 		}
 
-		.carousel .skills {
+		.carousel-caption {
 			color: @brand-primary;
-			background-color: rgba(255, 255, 255, 0.75);
-			border: 1px solid @brand-success;
-			padding: 10px;
-			border-radius: 15px;
+			background: white;
+			padding: 12px;
+			padding-bottom: 0;
 			text-shadow: 0 0 0.4em @brand-success;
+		}
+
+		.carousel-caption:first-child {
+			border-top-left-radius: 15px;
+			border-top-right-radius: 15px;
+		}
+
+		.carousel-caption:last-child {
+			border-bottom-left-radius: 15px;
+			border-bottom-right-radius: 15px;
 		}
 
 		.carousel .carousel-indicators li {
