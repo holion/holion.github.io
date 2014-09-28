@@ -15,12 +15,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Custom CSS -->
-	<link href="less/freelancer.css" rel="stylesheet">
-
-	<!-- Custom Fonts -->
-	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="less/freelancer.min.css" rel="stylesheet">
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,9 +51,9 @@
 					<li class="page-scroll">
 						<a href="#description">Kort fortalt</a>
 					</li>
-					<li class="page-scroll">
+<!--					<li class="page-scroll">
 						<a href="#portfolio">Referencer</a>
-					</li>
+					</li>-->
 					<!--<li class="page-scroll">
 						<a href="#contact">Kontakt</a>
 					</li>-->
@@ -85,25 +80,48 @@
 					<div class="intro-text">
 
 						<span class="name">Holion ApS</span>
-						<hr class="star-light">
-						
+						<span class="skills">.NET udvikling &middot; webudvikling &middot; konsulentbistand</span>
+<!--						<hr class="star-light">
+
 						<div id="intro-carousel" class="carousel slide" data-ride="carousel">
-							<!-- Indicators -->
 							<ol class="carousel-indicators hidden-xs">
 								<li data-target="#intro-carousel" data-slide-to="0" class="active"></li>
 								<li data-target="#intro-carousel" data-slide-to="1"></li>
+								<li data-target="#intro-carousel" data-slide-to="2"></li>
+								<li data-target="#intro-carousel" data-slide-to="3"></li>
 							</ol>
 
-							<!-- Wrapper for slides -->
 							<div class="carousel-inner">
 								<div class="item active">
+									<div class="carousel-caption" style="background: #2D3132; color: white">
+										<div class="skills hidden-xs">Stilen er venlig og afslappet</div>
+										<div class="skills visible-xs">Dataudtræk og analyser</div>
+									</div>
+									<img src="img/carousel/personalcontact2.png" alt="...">
+									<div class="carousel-caption" style="background: #171C1F; color: white">
+										<div class="skills hidden-xs">&nbsp;</div>
+										<div class="skills visible-xs">SQL og LINQ</div>
+									</div>
+								</div>
+								<div class="item">
 									<div class="carousel-caption">
 										<div class="skills hidden-xs">Vi er eksperter i avancerede dataudtræk og analyser</div>
 										<div class="skills visible-xs">Dataudtræk og analyser</div>
 									</div>
 									<img src="img/carousel/ex-trade.png" alt="...">
 									<div class="carousel-caption">
-										<div class="skills hidden-xs">Mange års erfaring med SQL og LINQ</div>
+										<div class="skills hidden-xs">&nbsp;</div>
+										<div class="skills visible-xs">SQL og LINQ</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="carousel-caption">
+										<div class="skills hidden-xs">&nbsp;</div>
+										<div class="skills visible-xs">Dataudtræk og analyser</div>
+									</div>
+									<img src="img/carousel/personalcontact.png" alt="...">
+									<div class="carousel-caption">
+										<div class="skills hidden-xs">&nbsp;</div>
 										<div class="skills visible-xs">SQL og LINQ</div>
 									</div>
 								</div>
@@ -114,24 +132,20 @@
 									</div>
 									<img src="img/carousel/wp.png" alt="...">
 									<div class="carousel-caption">
-										<div class="skills hidden-xs">C#, XAML, MVVM og dependency injection er hverdag</div>
+										<div class="skills hidden-xs">&nbsp;</div>
 										<div class="skills visible-xs">C#, XAML og MVVM</div>
 									</div>
 								</div>
 							</div>
 
-							<!-- Controls -->
 							<a class="left carousel-control" href="#intro-carousel" role="button" data-slide="prev">
 								<span class="glyphicon glyphicon-chevron-left"></span>
 							</a>
 							<a class="right carousel-control" href="#intro-carousel" role="button" data-slide="next">
 								<span class="glyphicon glyphicon-chevron-right"></span>
 							</a>
-						</div>
-
-						<hr class="star-light">
-
-						<span class="skills">.NET udvikling &middot; webudvikling &middot; konsulentbistand</span>
+						</div>-->
+						
 					</div>
 				</div>
 			</div>
@@ -157,14 +171,15 @@
 					<p>Hellere et ekstra opkald, end en forkert implementation.</p>
 				</div>
 				<div class="col-lg-4">
-					<p>Vores stil er venlig og afslappet, og vi tager meget gerne et uforpligtende møde. Vi ser frem til også at løse opgaver for jer.</p>
+					<p>Vores stil er venlig og afslappet, og vi tager meget gerne et uforpligtende møde.</p>
+					<p>Vi ser frem til også at løse opgaver for jer.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- Portfolio Grid Section -->
-	<section class="success" id="portfolio">
+<!--	<section class="success" id="portfolio">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
@@ -177,7 +192,7 @@
 					<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
 						<div class="caption">
 							<div class="caption-content">
-								<i class="fa fa-search-plus fa-3x"></i>
+								<strong>Sekoia</strong>
 							</div>
 						</div>
 						<img src="img/portfolio/sekoia.png" class="img-responsive" alt="">
@@ -187,7 +202,7 @@
 					<a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
 						<div class="caption">
 							<div class="caption-content">
-								<i class="fa fa-search-plus fa-3x"></i>
+								<strong>Ex-Trade</strong>
 							</div>
 						</div>
 						<img src="img/portfolio/ex-trade.png" class="img-responsive" alt="">
@@ -195,7 +210,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section>-->
 
 	<!-- Contact Section -->
 	<!--<section id="contact">
@@ -250,7 +265,7 @@
 		</div>
 	</section>-->
 	<!-- About Section -->
-	<section id="about">
+	<section class="success" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
@@ -260,9 +275,6 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-4">
-					<h3>CVR</h3>
-					<p>-- -- -- --</p>
-
 					<h3>Kontakt</h3>
 					<div style="display: table">
 						<div style="display: table-row">
@@ -295,16 +307,9 @@
 				</div>
 
 				<div class="col-lg-4">
-					<h3>Bankoplysninger</h3>
+					<h3>Bank</h3>
+					<p>Spar Nord Bank</p>
 					<div style="display: table">
-						<div style="display: table-row">
-							<p style="display: table-cell">
-								Bank:
-							</p>
-							<p style="display: table-cell">
-								Spar Nord
-							</p>
-						</div>
 						<div style="display: table-row">
 							<p style="display: table-cell">
 								Regnr:
@@ -318,10 +323,13 @@
 								Kontonr:
 							</p>
 							<p style="display: table-cell">
-								4571641521
+								4583314437
 							</p>
 						</div>
 					</div>
+
+					<h3>CVR</h3>
+					<p>36 08 60 09</p>
 				</div>
 			</div>
 		</div>
@@ -329,25 +337,6 @@
 
 	<!-- Footer -->
 	<footer class="text-center">
-		<!--		<div class="footer-above">
-					<div class="container">
-						<div class="row">
-							<div class="footer-col col-md-4">
-								<h3>Adresse</h3>
-								<p>Lyngåvej 74<br />8470 Hadsten</p>
-							</div>
-							<div class="footer-col col-md-4">
-								<h3>CVR</h3>
-								<p>30 84 96 98</p>
-							</div>
-							<div class="footer-col col-md-4">
-								<h3>Bankoplysninger</h3>
-								<p>Regnr:	7470</p>
-								<p>Kontonr:	4571641521</p>
-							</div>
-						</div>
-					</div>
-				</div>-->
 		<div class="footer-below">
 			<div class="container">
 				<div class="row">
@@ -449,7 +438,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+	<!--<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-content">
 			<div class="close-modal" data-dismiss="modal">
 				<div class="lr">
@@ -491,13 +480,13 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 
 	<!-- jQuery Version 1.11.0 -->
-	<script src="js/jquery-1.11.0.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
 	<!-- Bootstrap Core JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 	<!-- Plugin JavaScript -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>

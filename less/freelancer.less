@@ -3,6 +3,7 @@
 
 body {
 	overflow-x: hidden;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 p {
@@ -23,7 +24,7 @@ a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Verdana, Arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -42,7 +43,6 @@ hr.star-primary {
 hr.star-light:after,
 hr.star-primary:after {
 	/*content: "\f005";*/
-	font-family: FontAwesome;
 	display: inline-block;
 	position: relative;
 	top: -0.8em;
@@ -102,19 +102,19 @@ header {
 	.intro-text {
 		.name {
 			display: block;
-			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-family: Verdana, Arial, sans-serif;
 			font-weight: 700;
 			font-size: 2em;
 		}
 
 		.carousel-caption:first-child {
 			position: static;
-			padding-bottom: 0;
+			padding-bottom: 20px;
 		}
 
 		.carousel-caption:last-child {
 			position: static;
-			padding-top: 0;
+			padding-top: 20px;
 		}
 
 		.carousel img {
@@ -211,7 +211,7 @@ header {
 }
 
 .navbar {
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: Verdana, Arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 
@@ -233,6 +233,7 @@ header {
 .navbar-default,
 .navbar-inverse {
 	border: none;
+	background-color: @brand-header;
 }
 
 .navbar-default .navbar-nav > .active > a {
@@ -432,7 +433,7 @@ footer {
 
 	.footer-below {
 		padding: 25px 0;
-		background-color: darken(@brand-primary, 5%);
+		background-color: @brand-header;
 	}
 }
 
