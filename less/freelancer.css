@@ -141,6 +141,16 @@ header .intro-text .skills {
 .nav > li > a {
   padding: 10px 25px;
 }
+@media (min-width: 768px) {
+  .nav > li > a {
+    padding: 10px 15px;
+  }
+}
+@media (min-width: 1024px) {
+  .nav > li > a {
+    padding: 10px 25px;
+  }
+}
 .navbar-brand {
   height: auto;
 }
@@ -202,6 +212,9 @@ section {
 section h2 {
   margin: 0;
   font-size: 3em;
+}
+section li {
+  font-size: 20px;
 }
 section.success {
   background: #819f97;
