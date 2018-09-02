@@ -97,6 +97,7 @@ header {
 	img {
 		display: block;
 		margin: 0 auto 20px;
+		max-height: 200px;
 	}
 
 	.intro-text {
@@ -214,7 +215,7 @@ header {
 	}
 
 	.navbar-fixed-top.navbar-shrink {
-		padding: 10px 0;
+		padding: 0;
 
 		.navbar-brand {
 			font-size: 1.5em;
@@ -276,6 +277,11 @@ section {
 section.success {
 	background: @brand-success;
 	color: white;
+
+	a {
+		color: white;
+		text-decoration: underline;
+	}
 }
 
 @media(max-width:767px) {
@@ -288,77 +294,112 @@ section.success {
 	}
 }
 
-#portfolio {
-	.portfolio-item {
-		margin: 0 0 15px;
-		right: 0;
+.portfolioitem {
+	height: 200px;
+	// width: 350px;
+	border: 1px solid @brand-primary;
+	filter: grayscale(50%);
 
-		.portfolio-item-box {
-			height: 200px; 
-			width: 350px; 
-			border: 1px solid @brand-primary;
-
-			.portfolio-link {
-				display: flex;
-				height: 100%;
-				align-items: center;
-
-				img {
-					max-width: 90%;
-					max-height: 80%;
-					margin: auto auto;
-				}
-
-				.caption {
-					background: fade(white, 50%);
-					position: absolute;
-					width: 348px;
-					height: 100%;
-					opacity: 0;
-					transition: all ease 0.5s;
-					-webkit-transition: all ease 0.5s;
-					-moz-transition: all ease 0.5s;
-
-					&:hover {
-						opacity: 0;
-					}
-
-					.caption-content {
-						position: absolute;
-						width: 100%;
-						height: 20px;
-						font-size: 20px;
-						text-align: center;
-						top: 90%;
-						margin-top: -12px;
-						color: @brand-primary;
-
-						i {
-							margin-top: -12px;
-						}
-
-						h3,
-						h4 {
-							margin: 0;
-						}
-					}
-				}
-			}
-		}
+	&:hover {
+		transition: all ease 1.0s;
+		filter: grayscale(0%);
 	}
 
-	* {
-		z-index: 2;
-	}
-}
+	a {
+		width: 100%;
+		height: 100%;
+		display: flex;
 
-@media(min-width:767px) {
-	#portfolio {
-		.portfolio-item {
-			margin: 0 0 30px;
+		img {
+			max-width: 90%;
+			max-height: 80%;
+			margin: auto;
 		}
 	}
 }
+
+@media(max-width:767px) {
+	.portfolioitem {
+		margin: 0 0 30px;
+	}
+}
+
+// #portfolio {
+// 	.portfolio-item {
+// 		margin: 0 0 15px;
+// 		right: 0;
+// 		filter: grayscale(50%);
+
+// 		&:hover {
+// 			filter: grayscale(0%);
+// 		}
+
+// 		.portfolio-item-box {
+// 			height: 200px; 
+// 			width: 350px; 
+// 			border: 1px solid @brand-primary;
+
+// 			.portfolio-link {
+// 				display: flex;
+// 				height: 100%;
+// 				align-items: center;
+
+// 				img {
+// 					max-width: 90%;
+// 					max-height: 80%;
+// 					margin: auto auto;
+// 				}
+
+// 				.caption {
+// 					background: fade(white, 50%);
+// 					position: absolute;
+// 					width: 348px;
+// 					height: 100%;
+// 					opacity: 0;
+// 					transition: all ease 0.5s;
+// 					-webkit-transition: all ease 0.5s;
+// 					-moz-transition: all ease 0.5s;
+
+// 					&:hover {
+// 						opacity: 0;
+// 					}
+
+// 					.caption-content {
+// 						position: absolute;
+// 						width: 100%;
+// 						height: 20px;
+// 						font-size: 20px;
+// 						text-align: center;
+// 						top: 90%;
+// 						margin-top: -12px;
+// 						color: @brand-primary;
+
+// 						i {
+// 							margin-top: -12px;
+// 						}
+
+// 						h3,
+// 						h4 {
+// 							margin: 0;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+
+// 	* {
+// 		z-index: 2;
+// 	}
+// }
+
+// @media(min-width:767px) {
+// 	#portfolio {
+// 		.portfolio-item {
+// 			margin: 0 0 30px;
+// 		}
+// 	}
+// }
 
 .btn-outline {
 	color: white;
@@ -617,6 +658,48 @@ footer {
 				/* Safari and Chrome */
 				z-index: 1052;
 			}
+		}
+	}
+}
+
+@media(min-width:1024px) {
+	.cols-2 {
+		column-count: 2;
+		column-gap: 40px;
+	}
+}
+
+.testimonial {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	text-align: left;
+
+	img {
+		border-radius: 100%;
+		border: 1px solid lightgrey;
+		float: left;
+		max-height: 200px;
+		margin-right: 20px;
+
+		@media(max-width:768px) {
+			display: none;
+		}
+	}
+
+	.text {
+		@media(min-width:1024px) {
+			text-align: justify;
+		}
+	}
+
+	.contact {
+		margin-top: 20px;
+		font-weight: bold;
+
+		a {
+			color: white;
+			text-decoration: underline;
 		}
 	}
 }

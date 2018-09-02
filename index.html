@@ -15,7 +15,9 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Custom CSS -->
-	<link href="less/freelancer.min.css" rel="stylesheet">
+	<link href="less/freelancer.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,20 +57,14 @@
 						<a href="#apps">Apps</a>
 					</li>
 					<li class="page-scroll">
-							<a href="#portfolio">Referencer</a>
-						</li>
-						<li class="page-scroll">
+						<a href="#portfolio">Referencer</a>
+					</li>
+					<li class="page-scroll visible-xs visible-md visible-lg">
 						<a href="#tech">Teknologi</a>
 					</li>
-					<li class="page-scroll">
+					<li class="page-scroll visible-xs visible-lg">
 						<a href="#cancer">Fælles indsats</a>
 					</li>
-<!--					<li class="page-scroll">
-						<a href="#portfolio">Referencer</a>
-					</li>-->
-					<!--<li class="page-scroll">
-						<a href="#contact">Kontakt</a>
-					</li>-->
 					<li class="page-scroll">
 						<a href="#about">Om</a>
 					</li>
@@ -169,7 +165,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h2>Kort fortalt</h2>
+					<h2><i class="far fa-sticky-note"></i> Kort fortalt</h2>
 					<hr class="star-primary">
 				</div>
 			</div>
@@ -194,12 +190,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h2>Apps</h2>
+					<h2><i class="fas fa-mobile-alt"></i> Apps</h2>
 					<hr class="star-primary">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12" style="column-count: 2">
+				<div class="col-lg-12 cols-2">
 					<p>Som kunde hos Holion behøver man ikke bekymre sig om teknikken bag - den del tager vi os af. Men vi elsker teknologi og fortæller gerne om, hvad der rent faktisk ligger inde bagved, hvis dette skulle have nogens interesse.</p>
 					
 					<p>I forhold til udvikling af apps bekymrer vi os ikke blot om slutbrugerens oplevelse af systemet, men også om kundens pengepung. Den traditionelle tilgang til appudvikling er, at man udvikler én app til iPhone og én til Android - og dermed også betaler for 2 apps, som i bund og grund kan nøjagtig det samme. Men hos Holion ved vi, at hvis kunden skal have success og en fornuftig bundlinje, skal det ikke være en app, der bruger hele budgettet. Vi udvikler derfor altid apps ved brug af <i>crossplatform</i>-værktøjer. At vi udvikler <i>crossplatform</i> betyder, at vi kun udvikler én app, som til gengæld fungerer både på iPhone og Android. Det tager ikke den halve tid i forhold til den traditionelle tilgang, men det tager væsentlig kortere tid end at udvikle den samme app to gange. Vi går dog ikke på kompromis med brugeroplevelsen, som nogle crossplatform-udviklere gør, så vores apps er stadig med et native look-and-feel, da de er udviklet i Xamarin.</p>
@@ -214,39 +210,51 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h2>Referencer</h2>
+					<h2><i class="far fa-comments"></i> Referencer</h2>
 					<hr class="star-light">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12" style="column-count: 2; margin-bottom: 40px">
+				<div class="col-lg-12 cols-2" style="margin-bottom: 40px">
 					<p>Holion har siden 2014 løst mange forskellige opgaver. Vi har blandt andet hjulpet en af landets største banker, bygget et webbaseret system til et af landets største advokatkontorer, hjulpet et bryghus og meget andet. Ingen opgave er for lille og (næsten) ingen opgave er for stor, da vi udover vore fastansatte medarbejdere også har et stort netværk af faste freelancere, som kan assistere os, når der er tryk på.</p>
 
 					<p>Vi har udvalgt et par spændende projekter, som vi har skrevet lidt mere om. Tryk ind på projekterne herunder, for at læse mere.</p>
 				</div>
-		
-				<div class="col-sm-4 portfolio-item">
-					<div class="portfolio-item-box" style="background-color: #3996dc">
-						<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-							<div class="caption">
-								<div class="caption-content">
-									<strong>CarBuddii</strong>
-								</div>
-							</div>
-							<img src="img/portfolio/carbuddii.png" class="img-responsive" alt="">
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6 col-md-offset-1 col-md-5">
+					<div class="portfolioitem">
+						<a href="carbuddii/" style="background-color: #3996dc">
+							<img src="img/portfolio/carbuddii.png" alt="">
 						</a>
 					</div>
 				</div>
-				<div class="col-sm-4 portfolio-item">
-					<div class="portfolio-item-box">
-						<a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-							<div class="caption">
-								<div class="caption-content">
-									<strong>BeScord</strong>
-								</div>
-							</div>
-							<img src="img/portfolio/bescord.png" class="img-responsive" alt="">
+		
+				<div class="col-sm-6 col-md-5">
+					<div class="portfolioitem">
+						<a href="bescord/">
+							<img src="img/portfolio/bescord.png" alt="">
 						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="background-color: #3996dc; color: white; margin-top: 40px">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 testimonial">
+						<img src="img/portfolio/dp.jpg" />
+						<div style="display: table-cell">
+							<div class="text">
+								<p><i class="fas fa-quote-left"></i> I over tre år har vi kontinuerligt og med meget stor succes brugt Holion til udvikling af vores system. Vi er rigtig glade for både den forretningsmæssige, strategiske og processorienterede input og sparring og samtidig den udviklingen af produktet, vi har fået ved samarbejdet. <i class="fas fa-quote-right"></i></p>
+							</div>
+							<div class="contact">
+								<p><a href="https://www.linkedin.com/in/dennispraestekjaer/">Dennis Præstekjær</a>, CIO<br />
+								CarBuddii A/S</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -257,7 +265,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h2>Teknologi</h2>
+					<h2><i class="fas fa-microchip"></i> Teknologi</h2>
 					<hr class="star-primary">
 				</div>
 			</div>
@@ -293,7 +301,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h2>Fælles indsats</h2>
+					<h2><i class="far fa-handshake"></i> Fælles indsats</h2>
 					<hr class="star-primary">
 				</div>
 			</div>
@@ -366,7 +374,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h2>Om</h2>
+					<h2><i class="fas fa-map-signs"></i> Om</h2>
 					<hr class="star-light">
 				</div>
 			</div>
@@ -450,143 +458,6 @@
 		<a class="btn btn-primary" href="#page-top">
 			<i class="fa fa-chevron-up"></i>
 		</a>
-	</div>
-
-	<!-- Portfolio Modals -->
-	<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-content">
-			<div class="close-modal" data-dismiss="modal">
-				<div class="lr">
-					<div class="rl">
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-lg-offset-2">
-						<div class="modal-body">
-							<div style="background-color: #3996dc; border-radius: 25px 25px 0 0; padding-top: 40px; padding-bottom: 10px">
-								<img src="img/portfolio/carbuddii.png" class="img-responsive img-centered" alt="">
-							</div>
-							<div style="background-image: linear-gradient(#3996dc, #819F97); height: 40px">
-							</div>
-							<div class="modal-text">
-								<h3>Projektet</h3>
-								<p>Holion har i samarbejde med CarBuddii udviklet en app, som er tænkt til at være bilsælgerens foretrukne salgsredskab. Når en kunde går ind på forhandlerens hjemmeside og indtaster en forespørgsel eller booker en prøvetur i en bil, notificeres sælgeren øjeblikkelig om henvendelsen. Herefter kan sælgeren benytte appen igennem hele sagsprocessen og løbende kontakte kunden via opkald eller foruddefinerede e-mail templates, indtil bilen er solgt, afleveret til kunden og der ikke længere er behov for kontakt til denne.</p>
-								
-								<p>Der er også udviklet et administrationsmodul til systemet, som kan anvendes både internt hos CarBuddii og af de tilmeldte forhandlere. Via administrationsmodulet kan der blandt andet holdes styr på både CarBuddii's kunder og disses sælgere. Desuden er der forskellige rapporteringsværktøjer indbygget i systemet, så forhandlerne eksempelvis kan se, hvordan de enkelte sælgere performer i forhold til hinanden og om der bliver fulgt op på de leads, der kommer ind i systemet.</p>
-
-								<h3>Holions rolle</h3>
-								<p>CarBuddii har løbende defineret hvilke features der skulle være tilgængelige i appen. Holion har herefter estimeret de enkelte opgaver og efterfølgende stået for den tekniske implementering af projektet. Undervejs er det sket flere gange, at features er blevet ændret eller helt skåret væk i forbindelse med rådgivning fra Holions side. Holion går med andre ord ikke blot blindt ind og implementerer de features, som kunden ønsker, men guider gerne kunden i en retning som giver mening for kunden fremadrettet.</p>
-
-								<p>Holion har desuden hjulpet CarBuddii med selv at ansætte udviklere, som på sigt kan overtage udviklingsarbejdet. Hos Holion er vores førsteprioritet at hjælpe kunden til success - det er vores successkriterie.</p>
-
-								<h3>Teknikken</h3>
-								<p>Det primære element i samarbejdet med CarBuddii er en app, som er udviklet både til iPhone og Android. Appen er udviklet som en crossplatform app i <a href="https://visualstudio.microsoft.com/xamarin/">Xamarin</a>. Appen kommunikerer med en backend, som er kodet i <a href="https://www.microsoft.com/net">.NET</a> og hostes i <a href="https://azure.com">Azure</a>. Backenden gør brug af en <a href="https://azure.microsoft.com/en-us/services/sql-database/">Azure SQL database</a> til opbevaring af de relationelle data og <a href="https://azure.microsoft.com/en-us/services/storage/blobs/">Blob Storage</a> til opbevaring af dokumenter og billeder.</p>
-
-								<p>Administrationssystemet er udviklet i <a href="https://angularjs.org/">AngularJS</a> og anvender <a href="https://getbootstrap.com/">Bootstrap</a> til styling. Koden er her skrev i <a href="https://www.typescriptlang.org/">TypeScript</a>.</p>
-							</div>
-							<div style="background-color: #819F97; text-align: center">
-								<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Luk</button>
-							</div>
-							<div style="background-image: linear-gradient(#819F97, #3996dc); height: 40px">
-							</div>
-							<div style="background-color: #3996dc; height: 40px; border-radius: 0 0 25px 25px">
-							</div>	
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-content">
-			<div class="close-modal" data-dismiss="modal">
-				<div class="lr">
-					<div class="rl">
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-lg-offset-2">
-						<div class="modal-body">
-							<div class="modal-body-header" style="background-color: white">
-								<img src="img/portfolio/bescord.png" class="img-responsive img-centered" alt="">
-							</div>
-							<div class="modal-body-header-thing" style="background-image: linear-gradient(white, #819F97)">
-							</div>
-							<div class="modal-text">
-								<h3>Projektet</h3>
-								<p>Holion har i samarbejde med BeScord udviklet et meget avanceret system til finansiel analyse af regnskaber. Systemet kan tale direkte sammen med nogle af Danmarks største virksomheders ERP-systemer, hvorfra der hentes data ud i skyen. Når data er kommet ud i skyen, bliver disse transformeret, således at det er muligt at sammenligne disse på tværs af ERP-systemer, banker osv., så disse kan analyseres. Der bliver herefter genereret rapporter på baggrund af analyserne. Der genereres eksempelvis rapporter der fortæller, hvis bankerne har faktureret virksomhederne forkert - hvilket sker i stor stil! BeScord fandt ved hjælp af systemet overfakturering for mere end 900.000 kr. hos en meget uheldig kunde.</p>
-
-								<h3>Holions rolle</h3>
-								<p>BeScord har nogle af markedest dygtigste finansielle eksperter til rådighed og har derfor via timelange forklaringer og komplicerede Excel-ark kunnet forklare udviklerne hos Holion, hvad der skulle udvikles. Det har ikke været nogen let opgave, hverken for BeScord eller Holion. Men trods kompleksiteten er det lykkedes Holions dygtige udviklere at udvikle et system, som ikke bare regner rigtigt, men også håndterer de til tider kæmpe store datamængder uden problemer.</p>
-
-								<p>Holions folk har udover at udvikle systemet også stået for test, monitorering og vedligeholdelse. Med et system så stort og komplekst er det vigtigt, at der konstant holdes øje med evt. fejl både i selve systemet men også i forbindelse med hentning af data fra BeScords kunder. Men ved hjælp af indarbejdede rutiner og automatiserede processer, har der ikke været væsentlige nedbrud i systemet.</p>
-
-								<h3>Teknikken</h3>
-								<p>Micro services er grundelementet i et moderne system af denne størrelse. Da systemet kører i <a href="https://azure.com">Azure</a> er teknologien bag disse services <a href="https://azure.microsoft.com/en-us/services/service-fabric/">Service Fabric</a>, hvilket giver nogle rigtig gode muligheder for at skalere både de enkelte maskiner men også antallet af maskiner i clusteret, efterhånden som behovet ændrer sig i takt med antallet af kunder hos BeScord. Koden er skrevet delvist i <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#</a>, delvist i <a href="https://fsharp.org/">F#</a> og med nyeste version af <a href="https://dotnet.github.io/">.NET Core</a>.</p>
-
-								<p>Hos BeScords kunder skal der blot installeres en lille "connector", som på elegant vis kan hentes ned via Docker. BeScord tilbyder connectors til en lang række af de mest populære ERP-systemer, blandt andet <a href="https://www.sap.com">SAP</a>, <a href="https://dynamics.microsoft.com/da-dk/ax-overview/">Dynamics AX</a> og <a href="https://dynamics.microsoft.com/da-dk/nav-overview/">Dynamics NAV</a>.</p>
-
-								<p>Frontenden til systemet består af et avanceret websystem, som er udviklet i <a href="https://angular.io/">Angular</a>. Når der via tofaktorlogin er adgang til systemet, kan der ses et væld af tabeller og grafer, som alle giver et indblik i virksomhedens økonomiske situation - både den aktuelle og bagudrettet.</p>
-							</div>
-							<div class="modal-body-header-thing" style="background-color: #819F97; text-align: center">
-								<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Luk</button>
-							</div>
-							<div class="modal-body-header-thing" style="background-image: linear-gradient(#819F97, white)">
-							</div>
-							<div style="background-color: white; height: 40px; border-radius: 0 0 25px 25px">
-							</div>	
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-content">
-			<div class="close-modal" data-dismiss="modal">
-				<div class="lr">
-					<div class="rl">
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-lg-offset-2">
-						<div class="modal-body">
-							<h2>Project Title</h2>
-							<hr class="star-primary">
-							<img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-							<p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-							<ul class="list-inline item-details">
-								<li>
-									Client:
-									<strong>
-										<a href="http://startbootstrap.com">Start Bootstrap</a>
-									</strong>
-								</li>
-								<li>
-									Date:
-									<strong>
-										<a href="http://startbootstrap.com">April 2014</a>
-									</strong>
-								</li>
-								<li>
-									Service:
-									<strong>
-										<a href="http://startbootstrap.com">Web Development</a>
-									</strong>
-								</li>
-							</ul>
-							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 
 	<!-- jQuery Version 1.11.0 -->

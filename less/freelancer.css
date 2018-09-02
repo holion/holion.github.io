@@ -83,6 +83,7 @@ header .container {
 header img {
   display: block;
   margin: 0 auto 20px;
+  max-height: 200px;
 }
 header .intro-text .name {
   display: block;
@@ -172,7 +173,7 @@ header .intro-text .skills {
     padding-top: 29.5px;
   }
   .navbar-fixed-top.navbar-shrink {
-    padding: 10px 0;
+    padding: 0;
   }
   .navbar-fixed-top.navbar-shrink .navbar-brand {
     font-size: 1.5em;
@@ -220,6 +221,10 @@ section.success {
   background: #819F97;
   color: white;
 }
+section.success a {
+  color: white;
+  text-decoration: underline;
+}
 @media (max-width: 767px) {
   section {
     padding: 75px 0;
@@ -228,60 +233,27 @@ section.success {
     padding-top: 75px;
   }
 }
-#portfolio .portfolio-item {
-  margin: 0 0 15px;
-  right: 0;
-}
-#portfolio .portfolio-item .portfolio-item-box {
+.portfolioitem {
   height: 200px;
-  width: 350px;
   border: 1px solid #272F24;
+  filter: grayscale(50%);
 }
-#portfolio .portfolio-item .portfolio-item-box .portfolio-link {
-  display: flex;
+.portfolioitem:hover {
+  transition: all ease 1.0s;
+  filter: grayscale(0%);
+}
+.portfolioitem a {
+  width: 100%;
   height: 100%;
-  align-items: center;
+  display: flex;
 }
-#portfolio .portfolio-item .portfolio-item-box .portfolio-link img {
+.portfolioitem a img {
   max-width: 90%;
   max-height: 80%;
-  margin: auto auto;
+  margin: auto;
 }
-#portfolio .portfolio-item .portfolio-item-box .portfolio-link .caption {
-  background: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  width: 348px;
-  height: 100%;
-  opacity: 0;
-  transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-}
-#portfolio .portfolio-item .portfolio-item-box .portfolio-link .caption:hover {
-  opacity: 0;
-}
-#portfolio .portfolio-item .portfolio-item-box .portfolio-link .caption .caption-content {
-  position: absolute;
-  width: 100%;
-  height: 20px;
-  font-size: 20px;
-  text-align: center;
-  top: 90%;
-  margin-top: -12px;
-  color: #272F24;
-}
-#portfolio .portfolio-item .portfolio-item-box .portfolio-link .caption .caption-content i {
-  margin-top: -12px;
-}
-#portfolio .portfolio-item .portfolio-item-box .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-item-box .portfolio-link .caption .caption-content h4 {
-  margin: 0;
-}
-#portfolio * {
-  z-index: 2;
-}
-@media (min-width: 767px) {
-  #portfolio .portfolio-item {
+@media (max-width: 767px) {
+  .portfolioitem {
     margin: 0 0 30px;
   }
 }
@@ -501,4 +473,41 @@ footer .footer-below {
   -webkit-transform: rotate(90deg);
   /* Safari and Chrome */
   z-index: 1052;
+}
+@media (min-width: 1024px) {
+  .cols-2 {
+    column-count: 2;
+    column-gap: 40px;
+  }
+}
+.testimonial {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: left;
+}
+.testimonial img {
+  border-radius: 100%;
+  border: 1px solid lightgrey;
+  float: left;
+  max-height: 200px;
+  margin-right: 20px;
+}
+@media (max-width: 768px) {
+  .testimonial img {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .testimonial .text {
+    text-align: justify;
+  }
+}
+.testimonial .contact {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.testimonial .contact a {
+  color: white;
+  text-decoration: underline;
 }
