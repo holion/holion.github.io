@@ -242,7 +242,7 @@ section.success a {
 .portfolioitem {
   height: 200px;
   border: 1px solid #272F24;
-  filter: grayscale(50%);
+  filter: grayscale(90%);
 }
 .portfolioitem:hover {
   transition: all ease 1.0s;
@@ -519,6 +519,6 @@ footer .footer-below {
 }
 @media (max-width: 768px) {
   #about img {
-    max-width: 95%;
+    max-width: 100%;
   }
 }
