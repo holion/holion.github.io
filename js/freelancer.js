@@ -36,3 +36,12 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$('.testimonial-link').hover(function(e) {
+    $('.testimonial-outer').each(function(index) {
+        if (this.id !== 'testimonial-' + e.currentTarget.id)
+            $(this).hide();
+        else
+            $(this).show();
+    });
+});
