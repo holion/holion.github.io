@@ -517,3 +517,8 @@ footer .footer-below {
   color: white;
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+  #about img {
+    max-width: 95%;
+  }
+}
